@@ -46,3 +46,7 @@ function dataValue(dv) {
     <li>Condition-${weatherText}</li>`;
   otherInfo.appendChild(newli);
 }
+if(search.value==""){
+  URl = `http://api.weatherapi.com/v1/current.json?key=3354a24d79854a4ca3c134744240102&q=mumbai&aqi=no`;
+  getData(URl);
+}
